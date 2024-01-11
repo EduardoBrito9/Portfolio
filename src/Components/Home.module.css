@@ -1,0 +1,84 @@
+@import "../App.css";
+
+.home {
+  display: grid;
+  height: 90vh;
+  margin: 0 auto;
+  max-width: 45rem;
+  gap: 1rem;
+}
+
+/*apresentacao*/
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: center;
+  justify-self: start;
+  padding-top: 80px;
+}
+
+.name {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.informations p:first-child {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.informations p:last-child {
+  color: var(--greyLetter);
+  font-size: 0.9rem;
+}
+
+/*lista com minhas redes sociais para contato*/
+
+.mdsociais {
+  align-self: end;
+  justify-self: center;
+}
+
+.listaMidias {
+  display: flex;
+  font-family: "Poppins";
+}
+
+.listaMidias a {
+  color: var(--greyLetter);
+  transition: 0.3s;
+  padding: 0.7rem 1.5rem;
+  transition: 0s;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.listaMidias a:hover {
+  transition: 0.6s;
+  color: var(--white);
+}
+
+.listaMidias a::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../images/email.png") no-repeat center center;
+  position: absolute;
+  margin: 2px 0 0 6px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.listaMidias a:hover::after {
+  opacity: 1;
+  transition: 0.5s;
+}

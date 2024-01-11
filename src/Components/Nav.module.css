@@ -1,0 +1,40 @@
+@import "../App.css";
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infs {
+  display: flex;
+  font-family: "Poppins";
+  gap: 0.5rem;
+}
+
+.infs a {
+  color: var(--greyLetter);
+  transition: 0.3s;
+  padding: 0.7rem 1.5rem;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.infs a:hover {
+  background-color: var(--grey);
+  transition: 0.3s;
+}
+
+.name {
+  color: var(--white);
+  margin-left: 1rem;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.name:hover {
+  color: var(--greyHover);
+  transition: 0.3s;
+  background-color: var(--grey);
+}
