@@ -1,0 +1,57 @@
+@import "../App.css";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  max-width: 45rem;
+  padding-top: 7rem;
+}
+
+.titleProject {
+  font-size: 2.5rem;
+  background-image: linear-gradient(
+    115deg,
+    rgb(41, 249, 218) 0%,
+    rgb(147, 255, 187) 35%,
+    rgb(88, 255, 158) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.showing {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.showing h1 {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.myprojects {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.myprojects h3 {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.myprojects ul {
+  padding: 0px 0px 0px 30px;
+}
+
+.myprojects li {
+  list-style: circle;
+  color: var(--greyLetter);
+}
+
+.myprojects a {
+  color: var(--white);
+  border-bottom: 0.5px solid var(--greyLetter);
+}

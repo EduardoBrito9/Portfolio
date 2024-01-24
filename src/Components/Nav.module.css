@@ -25,6 +25,24 @@
   transition: 0.3s;
 }
 
+.infs :global(.active) {
+  color: white;
+  display: inline-block;
+}
+
+.infs :global(.active)::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 2px;
+  top: 56px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  animation: opac 0.5s forwards;
+}
+
 .name {
   color: var(--white);
   margin-left: 1rem;
@@ -37,4 +55,13 @@
   color: var(--greyHover);
   transition: 0.3s;
   background-color: var(--grey);
+}
+
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

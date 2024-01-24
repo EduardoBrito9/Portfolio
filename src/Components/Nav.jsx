@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Nav.module.css";
 import "../App.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <header>
@@ -11,9 +11,9 @@ const Nav = () => {
         </Link>
 
         <ul className={styles.infs}>
-          <Link to="about">About</Link>
-          <Link to="skills">Skills</Link>
-          <Link to="projects">Projects</Link>
+          <NavLink to="about">About</NavLink>
+          <NavLink to="skills">Skills</NavLink>
+          <NavLink to="projects">Projects</NavLink>
         </ul>
         <h3>Imagem</h3>
       </nav>

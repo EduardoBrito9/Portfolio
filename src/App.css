@@ -56,4 +56,14 @@ a {
   max-width: 190rem;
   padding: 0 1rem;
   margin: 0 auto;
+  animation: wavyLeft .6s forwards;
+}
+
+@keyframes wavyLeft {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: initial;
+  }
 }
